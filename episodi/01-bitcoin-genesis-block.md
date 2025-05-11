@@ -1,6 +1,6 @@
 # Verificare la citazione contenuta nel blocco genesi di Bitcoin
 
-Clicca [qui](https://x.com/crypto_ita2/status/1891072558646333440) per vedere il video YouTube.
+Clicca [qui](https://youtu.be/S501WaS3kmE) per vedere il video YouTube.
 
 Clicca [qui](https://x.com/crypto_ita2/status/1891072558646333440) per leggere il post X.
 
