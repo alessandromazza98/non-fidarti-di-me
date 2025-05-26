@@ -1,8 +1,6 @@
 # Firmare digitalmente un messaggio e verificarne la validità
 
-Clicca [qui](https://x.com/crypto_ita2/status/1891072558646333440) per vedere il video YouTube.
-
-Clicca [qui](https://x.com/crypto_ita2/status/1891072558646333440) per leggere il post X.
+Clicca [qui](https://youtu.be/vhU_N50X0AM) per vedere il video YouTube.
 
 ## Requisiti
 
