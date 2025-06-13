@@ -6,7 +6,7 @@ Clicca [qui](https://youtu.be/dnr21J5X3UU) per vedere il video YouTube.
 
 È necessario avere installato sul proprio computer [Foundry](https://book.getfoundry.sh/getting-started/installation).
 
-## Indirizzi (Base Mainnet)
+## Indirizzi (Ethereum Mainnet)
 
 - Pool: 0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640
 - WETH: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
