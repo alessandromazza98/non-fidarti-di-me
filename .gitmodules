@@ -1,0 +1,12 @@
+[submodule "episodi/flashloan-project/lib/aave-v3-core"]
+	path = episodi/flashloan-project/lib/aave-v3-core
+	url = https://github.com/aave/aave-v3-core
+[submodule "episodi/flashloan-project/lib/openzeppelin-contracts"]
+	path = episodi/flashloan-project/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "episodi/materiale/04-flashloan/lib/aave-v3-core"]
+	path = episodi/materiale/04-flashloan/lib/aave-v3-core
+	url = https://github.com/aave/aave-v3-core
+[submodule "episodi/materiale/04-flashloan/lib/openzeppelin-contracts"]
+	path = episodi/materiale/04-flashloan/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
