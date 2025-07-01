@@ -1,6 +1,6 @@
 # Ottenere il prezzo di ETH on-chain
 
-Clicca [qui](https://youtu.be/dnr21J5X3UU) per vedere il video YouTube.
+Clicca [qui](https://youtu.be/hQT-LTZvl2o) per vedere il video YouTube.
 
 ## Requisiti
 
