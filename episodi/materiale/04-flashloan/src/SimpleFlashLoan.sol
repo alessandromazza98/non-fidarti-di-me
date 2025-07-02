@@ -57,10 +57,10 @@ contract SimpleFlashLoan is IFlashLoanSimpleReceiver {
         // Request the flashloan
         POOL.flashLoanSimple(
             address(this), // receiverAddress
-            asset,         // asset to borrow
-            amount,        // amount to borrow
-            "",            // params (empty for this simple example)
-            0              // referralCode
+            asset, // asset to borrow
+            amount, // amount to borrow
+            "", // params (empty for this simple example)
+            0 // referralCode
         );
     }
 
@@ -73,20 +73,18 @@ contract SimpleFlashLoan is IFlashLoanSimpleReceiver {
      * @param params The byte-encoded params passed when initiating the flashloan
      * @return True if the execution of the operation succeeds, false otherwise
      */
-    function executeOperation(
-        address asset,
-        uint256 amount,
-        uint256 premium,
-        address initiator,
-        bytes calldata params
-    ) external override returns (bool) {
+    function executeOperation(address asset, uint256 amount, uint256 premium, address initiator, bytes calldata params)
+        external
+        override
+        returns (bool)
+    {
         // Ensure the caller is the Aave Pool
         require(msg.sender == address(POOL), "Caller is not Aave Pool");
         require(initiator == address(this), "Initiator is not this contract");
 
         // Emit event showing we received the flashloan
         emit FlashLoanReceived(asset, amount, premium);
-        
+
         // Show current balance (should include the borrowed amount)
         // For WETH and other ERC20 tokens, show token balance
         uint256 currentBalance = IERC20(asset).balanceOf(address(this));
@@ -107,7 +105,7 @@ contract SimpleFlashLoan is IFlashLoanSimpleReceiver {
         IERC20(asset).approve(address(POOL), amountToRepay);
 
         emit FlashLoanRepaid(asset, amount, premium);
-        
+
         return true;
     }
 
@@ -117,7 +115,7 @@ contract SimpleFlashLoan is IFlashLoanSimpleReceiver {
     function withdraw() external onlyOwner {
         uint256 balance = address(this).balance;
         if (balance == 0) revert InsufficientBalance();
-        
+
         owner.transfer(balance);
     }
 
@@ -127,7 +125,7 @@ contract SimpleFlashLoan is IFlashLoanSimpleReceiver {
     function withdrawToken(address token) external onlyOwner {
         uint256 balance = IERC20(token).balanceOf(address(this));
         if (balance == 0) revert InsufficientBalance();
-        
+
         IERC20(token).transfer(owner, balance);
     }
 

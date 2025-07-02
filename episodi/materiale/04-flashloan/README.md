@@ -61,8 +61,8 @@ forge script script/DeployFlashLoan.s.sol:DeployFlashLoan --rpc-url base --broad
 After deployment, fund your contract with WETH to pay flashloan fees:
 
 ```bash
-# Send 0.01 WETH to the contract (you need WETH, not ETH)
-cast send 0x4200000000000000000000000000000000000006 "transfer(address,uint256)" YOUR_CONTRACT_ADDRESS 10000000000000000 --rpc-url base --private-key $PRIVATE_KEY
+# Send 0.001 WETH to the contract (you need WETH, not ETH)
+cast send 0x4200000000000000000000000000000000000006 "transfer(address,uint256)" YOUR_CONTRACT_ADDRESS 1000000000000000 --rpc-url base --private-key $PRIVATE_KEY
 ```
 
 ### 2. Execute a FlashLoan
