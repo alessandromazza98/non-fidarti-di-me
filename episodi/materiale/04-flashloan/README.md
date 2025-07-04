@@ -34,7 +34,7 @@ Create a `.env` file:
 cp .env.example .env
 
 # Edit .env with your actual values:
-# PRIVATE_KEY=your_private_key_without_0x_prefix
+# PRIVATE_KEY=your_private_key_with_0x_prefix
 # BASESCAN_API_KEY=your_basescan_api_key (optional)
 ```
 
